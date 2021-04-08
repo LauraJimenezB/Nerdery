@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+}
+
+body {
+    background-color: rgb(228, 211, 186);
+    padding: 20px;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+}
+
+.playerCard{
+    background-color: rgb(247, 243, 236);
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.playerCard button{
+    margin-top: 10px;
+    background-color: rgb(167, 167, 167);
+    border: none;
+    padding: 5px;
+    width: 120px;
+    border-radius: 20px;
+}
