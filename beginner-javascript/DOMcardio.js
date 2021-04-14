@@ -111,3 +111,31 @@ newDiv.querySelectorAll('.playerCard').forEach((card)=>{
 // select all the buttons!
 // make out delete function
 // loop over them and attach a listener
+const button = document.createElement('button');
+button.innerHTML = 'click'
+const button2 = document.createElement('button');
+button2.innerHTML = 'click2'
+button.classList.add('abc');
+button2.classList.add('abc');
+
+document.body.appendChild(button);
+document.body.appendChild(button2);
+
+const buttons = document.querySelectorAll('.abc');
+
+function showGreeting () {
+    console.log('Hola')
+}
+
+function handleClick (xyz) {
+    xyz.addEventListener('click', showGreeting)
+}
+
+buttons.forEach(handleClick);
+
+buttons.forEach(button=>{
+    button.addEventListener('click', ()=>{
+        console.log('Hello');
+    })
+})
+
